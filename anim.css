@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+}
+.netflix{
+    width:150px;
+    height:250px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.netflix span{
+    width: 50px;
+    height: 0;
+    background-color:#db0001;
+    position:absolute;
+}
+.left{
+    left:0;
+    bottom:0;
+    animation:net 1s linear forwards;
+    animation-delay: 1s;
+}
+.center{
+    top: 0;
+    left: o;
+    transform: skewX(22deg);
+    transform-origin: top left;
+    box-shadow: 0 0 50px #000;
+    z-index: 2;
+    animation:net 1s linear forwards;
+    animation-delay: 2s;
+}
+.right{
+    right: 0;
+    bottom: 0;
+    animation:net 1s linear forwards;
+    animation-delay: 3s;
+}
+@keyframes net {
+    100%{
+        height: 100%;
+    }
+}
+.flix{
+    width:150px;
+    height:250px;
+    position:absolute;
+    top:70%;
+    left:690px;
+    /* transform: translate(-50%,-50%);  */
+    color: #db0001;
+    animation:content 2s ease-in-out;
+}
+@keyframes flix{
+    100%{
+        left: 40%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
